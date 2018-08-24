@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.App {
+  padding-top: 50px;
+  width: 250px; 
+  margin: 0 auto;
+}
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip-trigger {
+  display: inline-block;
+  text-decoration: underline;
+}
+
+.tooltip-bubble {
+  min-width: 120px;
+  max-width: 210px;
+  position: absolute;
+  z-index: 10;
+}
+.tooltip-bubble::after {
+  content: '';
+  position: absolute;
+}
+
+.tooltip-bottom {
+  top: 100%;
+  left: 50%;
+  padding-top: 9px;
+  transform: translateX(-50%);
+}
+  
+.tooltip-bottom::after {
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-bottom: 9px solid white;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tooltip-message {
+  background: white;
+  border: 1px solid black;
+  border-radius: 3px;
+  color: black;
+  font-size: .75rem;
+  line-height: 1.4;
+  padding: .75em;
+  text-align: center;
+}
+
+.savings {
+  color: red;
+}
+
+.right {
+  float: right;
+}
+
+.picture {
+  background-image: url("chair.jpeg");
+  background-repeat: no-repeat;
+  width: 30%;
+  height: 80px;
+  display: inline-block;
+}
+
+.description {
+  display: inline-block;
+  width: 60%;
+  position: relative;
+}
+
+.promo, .itemDetails {
+  text-decoration: underline
+}
+
+.wrapper {
+  border-bottom: 1px solid darkgray;
+}
+
+.wrapper div {
+  padding: 10px;
+}
+
+.estTotal {
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 1px solid darkgray;
+}
+
+.itemDetails {
+  padding: 10px;
+}
+
+.promo {
+  padding: 10px;
+}
